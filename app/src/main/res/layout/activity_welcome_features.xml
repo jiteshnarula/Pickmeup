@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity.WelcomeFeaturesActivity"
+    android:background="@color/colorWhite"
+
+    >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/slideViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="339dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="99dp"></android.support.v4.view.ViewPager>
+
+
+    <TextView
+        android:id="@+id/simpleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="59dp"
+        android:layout_marginStart="46dp"
+        android:gravity="center"
+        android:text="Already have an account? "
+        android:textColor="#0f0f0f"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/loginTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/simpleTextView"
+        android:layout_toEndOf="@+id/simpleTextView"
+        android:text="Log In"
+        android:textColor="@color/colorred"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/signupTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:text="Get Started"
+        android:background="@color/colorBlack"
+        android:textColor="@color/colorred"
+        android:textSize="30sp"
+        android:padding="5dp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="203dp"
+        android:layout_height="64dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:contentDescription="TODO"
+        app:srcCompat="@drawable/pickmeupnewlogohalf" />
+
+    <LinearLayout
+        android:id="@+id/dotsLinearLayout"
+        android:layout_width="51dp"
+        android:layout_height="33dp"
+        android:layout_below="@+id/slideViewPager"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="horizontal"></LinearLayout>
+
+
+</RelativeLayout>
